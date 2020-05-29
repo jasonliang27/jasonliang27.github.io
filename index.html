@@ -3,12 +3,12 @@
  * @version: 
  * @Author: Jason Liang
  * @Date: 2020-05-07 17:59:50
- * @LastEditTime: 2020-05-29 20:01:38
+ * @LastEditTime: 2020-05-29 21:43:56
  -->
 <!DOCTYPE html>
 <html>
 <head>
-<script>
+  <script>
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
@@ -16,8 +16,12 @@
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
-        </script>
-    </head>
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
 <body>
   
 <script src="./phaser.min.js"></script>
@@ -52,7 +56,28 @@
         credit: 'Session ID: '+sign
     });
 </script>
+
+<link rel="stylesheet" type="text/css" href="./waifu.css">
+<div class="waifu" id="waifu">
+    <div class="waifu-tips" style="opacity: 1;"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-home"></span>
+        <span class="fui-chat"></span>
+        <span class="fui-eye"></span>
+        <span class="fui-user"></span>
+        <span class="fui-photo"></span>
+        <span class="fui-info-circle"></span>
+        <span class="fui-cross"></span>
+    </div>
+</div>
+<script src="./live2d.js"></script>
+<script src="./waifu-tips.js"></script>
+<script type="text/javascript">initModel()</script>
+
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
+
+<link rel="stylesheet" type="text/css" href="https://files.cnblogs.com/files/oneonone/flat-ui.min.css"/>
